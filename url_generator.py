@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-# This variable takes the url of an imbd movies list contains results of search or something
+# This variable takes the url of an imdb movies list contains results of search or something
 url_of_list_of_movies = 'https://www.imdb.com/india/top-rated-indian-movies/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=461131e5-5af0-4e50-bee2-223fad1e00ca&pf_rd_r=X7N4808F5P0QZ03TKTFJ&pf_rd_s=center-1&pf_rd_t=60601&pf_rd_i=india.toprated&ref_=fea_india_ss_toprated_india_tr_india250_sm'
 
 
@@ -46,6 +46,6 @@ def full_link(start_link, middle_link, end_link):
     return links
 
 '''Now save the full accessible links to a text file "urls.txt"'''
-with open('url.txt', 'w') as f:
+with open('urls.txt', 'w') as f:
     for url in full_link(start_link, middle_link(soup), end_link):
         f.write(url + "\n")
