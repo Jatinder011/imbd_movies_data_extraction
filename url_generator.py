@@ -49,3 +49,4 @@ def full_link(start_link, middle_link, end_link):
 with open('urls.txt', 'w') as f:
     for url in full_link(start_link, middle_link(soup), end_link):
         f.write(url + "\n")
+
