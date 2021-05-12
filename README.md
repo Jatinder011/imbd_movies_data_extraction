@@ -15,7 +15,7 @@ This script takes url of search query and return a txt file with all the urls of
 ### html_reteriver.py
 This script return the html files of each url and save in them in a folder called "html".
 
-### Extractor.py
+### extractor.py
 This script get the data about:
 
 1. Movie Title
