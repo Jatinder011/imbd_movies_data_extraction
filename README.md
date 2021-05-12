@@ -3,6 +3,12 @@
 Extract the data from movies page and create a dataframe
 
 
+- if you want to get data from multiple imbd pages
+1. get the url(s)
+2. run url_generater.py script to create a text file with all the urls
+3. or manually add the urls in a text file
+
+
 ### Extractor.py
 This script get the data about
 
